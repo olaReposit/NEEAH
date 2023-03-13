@@ -1,0 +1,517 @@
+* {
+  --Primary-colour: #583b26;
+  --Secondary-colour-1: #ecd4c2;
+  --Secondary-colour-2: #16140f;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  scroll-behavior: smooth;
+  scrollbar-3dlight-color: #583b26;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.hero {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  padding: 0 3em;
+  padding-top: 2.5em;
+  z-index: 999;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  padding: 0.8em 1em;
+  box-sizing: border-box;
+  max-width: 100vw;
+  height: 80px;
+}
+
+.brand-container {
+  width: 100%;
+  padding: 0 2em;
+}
+
+.brand a {
+  height: 50px;
+}
+
+.brand img {
+  height: 100%;
+  transition: 500ms ease-in;
+}
+
+.report {
+  color: var(--Primary-colour);
+}
+
+.report h4 {
+  font-size: 2em;
+  color: var(--Secondary-colour-2);
+  transition: 1000ms ease-in;
+}
+
+.report h2 {
+  font-size: 2.5em;
+  transition: 1000ms ease-in;
+}
+
+.elements {
+  width: 25px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: -999;
+  float: left;
+  transition: 500ms ease-in;
+}
+
+.triangle {
+  background-image: url(../assets/floating-shapes/triangle.svg);
+  top: -150px;
+  left: 100px;
+}
+
+.triangle:hover {
+  top: -100px;
+}
+
+.hexagon {
+  background-image: url(../assets/floating-shapes/hexagon.svg);
+  top: -30px;
+  left: 7px;
+}
+
+.hexagon:hover {
+  left: 20px;
+  top: 0px;
+}
+
+.quad-circle {
+  background-image: url(../assets/floating-shapes/quad-circle.svg);
+  top: -140px;
+  left: 7px;
+  float: right;
+}
+
+.quad-circle:hover {
+  top: -120px;
+}
+
+.stairslike {
+  background-image: url(../assets/floating-shapes/stairslike.svg);
+  left: 7px;
+  float: right;
+}
+
+.stairslike:hover {
+  left: -20px;
+}
+
+.square {
+  background-image: url(../assets/floating-shapes/square.svg);
+  top: -70px;
+  left: -40px;
+}
+
+.square:hover {
+  top: -50px;
+}
+
+.circle {
+  background-image: url(../assets/floating-shapes/circle.svg);
+  width: 15px;
+  top: -150px;
+  left: 40px;
+}
+
+.circle:hover {
+  top: -130px;
+}
+
+.circle-unfill {
+  background-image: url(../assets/floating-shapes/circle-unfill.svg);
+  bottom: -20px;
+  left: -20px;
+  float: right;
+}
+
+.circle-unfill:hover {
+  left: -40px;
+  bottom: 0px;
+}
+
+.countdown-feature {
+  margin-top: 2em;
+  min-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.countdown-feature-container {
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  transition: 1000ms ease-in;
+}
+
+.countdowns {
+  background-color: var(--Primary-colour);
+  color: white;
+  text-align: center;
+  width: 30%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6em;
+  transition: 1000ms ease-in;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.countdowns .count-container {
+  width: 40%;
+  display: grid;
+  justify-content: center;
+}
+
+.countdowns p {
+  padding: 7px;
+  text-align: center;
+  display: block;
+}
+
+.attraction {
+  display: flex;
+  justify-content: center;
+}
+
+.attraction img {
+  margin-top: 3em;
+  width: 95%;
+  max-width: 900px;
+  justify-content: center;
+  transition: 2000ms ease-in;
+}
+
+form {
+  margin-top: 4em;
+  width: 100%;
+  transition: 1000ms ease-in;
+  transition-delay: 1500ms;
+}
+
+form .news-head {
+  color: var(--Primary-colour);
+  font-weight: bold;
+}
+
+form input {
+  padding: 9px 15px;
+  border: none;
+  display: block;
+}
+
+#email {
+  border: 1px solid var(--Primary-colour);
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: 0.3em;
+  box-sizing: border-box;
+  position: relative;
+  top: 0px;
+  transition: 300ms ease-in;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#email:hover {
+  border: 2px solid var(--Primary-colour);
+  box-shadow: rgba(88, 59, 38, 0.5) 0px 3px 10px;
+  position: relative;
+  top: -5px;
+}
+
+#email:focus {
+  border: var(--Primary-colour);
+}
+
+#submit {
+  margin-top: 0.5em;
+  background-color: var(--Secondary-colour-2);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  top: 0;
+  transition: 300ms ease-in;
+}
+
+#submit:hover {
+  background-color: var(--Primary-colour);
+  cursor: pointer;
+  box-shadow: rgba(88, 59, 38, 0.5) 0px 3px 10px;
+  position: relative;
+  top: -5px;
+}
+
+form p {
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: #808080;
+}
+
+.brand-socials {
+  margin-top: 3em;
+  padding-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--Secondary-colour-1);
+}
+
+.brand-socials-container {
+  text-align: center;
+  width: 90%;
+  color: #808080;
+}
+
+.brand-socials-container p span {
+  font-weight: bold;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.socials a img {
+  width: 25px;
+  height: 25px;
+  padding: 14px;
+  position: relative;
+  top: 0;
+  border-radius: initial;
+  transition: 500ms ease-in;
+}
+
+.socials a img:hover {
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  transition: 300ms ease-out;
+}
+
+.customer-service {
+  margin-top: 1em;
+  width: 100%;
+  color: #808080;
+  display: block;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.customer-service a {
+  color: #808080;
+  display: block;
+  font-weight: initial;
+  transition: 400ms ease-in;
+  padding: 7px;
+  position: relative;
+  top: 0;
+}
+
+.customer-service a:hover {
+  font-weight: bold;
+  color: var(--Primary-colour);
+  top: -5px;
+}
+
+footer {
+  padding-bottom: 2em;
+}
+
+@media only screen and (min-width: 760px) {
+  .body {
+    padding-top: 1em;
+  }
+
+  .report h4 {
+    font-size: 2.5em;
+  }
+
+  .report h4 {
+    color: none;
+  }
+
+  .report h2 {
+    font-size: 3.5em;
+  }
+
+  .countdown-feature-container {
+    min-width: 400px;
+    transition: 1000ms ease-in;
+  }
+
+  .countdowns {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .countdown-feature {
+    padding-top: 2.5em;
+  }
+
+  .attraction {
+    margin-top: 3em;
+  }
+
+  form {
+    margin-top: 6em;
+  }
+
+  form label,
+  input,
+  form p {
+    font-size: 1em;
+  }
+
+  .brand-socials-container p {
+    font-size: 1em;
+  }
+
+  .customer-service {
+    font-size: 1em;
+  }
+
+  .circle {
+    top: -380px;
+    left: 180px;
+  }
+
+  form {
+    box-sizing: border-box;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  .elements {
+    width: 40px;
+    height: 45px;
+  }
+
+  .triangle {
+    top: -180px;
+  }
+
+  .quad-circle {
+    top: -180px;
+    left: 7px;
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .countdown-feature {
+    width: fit-content;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+    width: 100%;
+  }
+
+  form label {
+    display: block;
+  }
+
+  form input {
+    display: inline;
+  }
+
+  #email {
+    width: 65%;
+    float: left;
+    margin-right: 10px;
+  }
+
+  #submit {
+    margin-top: 0.3em;
+    padding: 10px;
+    border-radius: 0.5em;
+    width: 25%;
+    transition: 300ms ease-in;
+  }
+
+  form {
+    margin: 0em;
+    padding: 0;
+  }
+
+  form p {
+    font-size: 1em;
+  }
+
+  .brand-socials {
+    margin: 0 20px 0 0;
+    padding-top: 0em;
+    border-top: none;
+    width: 45%;
+  }
+
+  .customer-service {
+    width: 40%;
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .customer-service a {
+    display: block;
+  }
+}
