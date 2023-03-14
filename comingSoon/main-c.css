@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
 * {
   --Primary-colour: #583b26;
   --Secondary-colour-1: #ecd4c2;
   --Secondary-colour-2: #16140f;
   margin: 0;
   padding: 0;
-  font-family: poppins;
-  scroll-behavior: smooth;
-  scrollbar-3dlight-color: #583b26;
+  font-family: 'poppins', sans-serif;
 }
 
 body {
