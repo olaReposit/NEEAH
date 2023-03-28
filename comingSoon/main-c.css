@@ -246,7 +246,7 @@ form input {
   position: relative;
   top: 0px;
   transition: 300ms ease-in;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 500;
 }
 
